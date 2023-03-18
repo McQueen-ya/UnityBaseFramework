@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 场景切换模块
-/// 知识点
-/// 1.场景异步加载
-/// 2.协程
-/// 3.委托
 /// </summary>
 public class ScenesMgr : BaseManager<ScenesMgr>
 {

@@ -172,5 +172,4 @@ public class UIManager : BaseManager<UIManager>
 
         trigger.triggers.Add(entry);
     }
-
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-
 public interface IEventInfo
 {
 
@@ -29,13 +28,8 @@ public class EventInfo : IEventInfo
     }
 }
 
-
 /// <summary>
 /// 事件中心 单例模式对象
-/// 1.Dictionary
-/// 2.委托
-/// 3.观察者设计模式
-/// 4.泛型
 /// </summary>
 public class EventCenter : BaseManager<EventCenter>
 {
@@ -82,7 +76,6 @@ public class EventCenter : BaseManager<EventCenter>
             eventDic.Add(name, new EventInfo(action));
         }
     }
-
 
     /// <summary>
     /// 移除对应的事件监听

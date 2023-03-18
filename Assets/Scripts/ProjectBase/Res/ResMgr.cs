@@ -5,10 +5,6 @@ using UnityEngine.Events;
 
 /// <summary>
 /// 资源加载模块
-/// 1.异步加载
-/// 2.委托和 lambda表达式
-/// 3.协程
-/// 4.泛型
 /// </summary>
 public class ResMgr : BaseManager<ResMgr>
 {
@@ -22,7 +18,6 @@ public class ResMgr : BaseManager<ResMgr>
         else//TextAsset AudioClip
             return res;
     }
-
 
     //异步加载资源
     public void LoadAsync<T>(string name, UnityAction<T> callback) where T:Object
@@ -42,6 +37,4 @@ public class ResMgr : BaseManager<ResMgr>
         else
             callback(r.asset as T);
     }
-
-
 }

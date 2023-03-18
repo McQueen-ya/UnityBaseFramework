@@ -23,7 +23,7 @@ public class PoolData
     }
 
     /// <summary>
-    /// 往抽屉里面 压都东西
+    /// 往抽屉里面存东西
     /// </summary>
     /// <param name="obj"></param>
     public void PushObj(GameObject obj)
@@ -37,7 +37,7 @@ public class PoolData
     }
 
     /// <summary>
-    /// 从抽屉里面 取东西
+    /// 从抽屉里面取东西
     /// </summary>
     /// <returns></returns>
     public GameObject GetObj()
@@ -57,8 +57,6 @@ public class PoolData
 
 /// <summary>
 /// 缓存池模块
-/// 1.Dictionary List
-/// 2.GameObject 和 Resources 两个公共类中的 API 
 /// </summary>
 public class PoolMgr : BaseManager<PoolMgr>
 {
@@ -113,7 +111,6 @@ public class PoolMgr : BaseManager<PoolMgr>
             poolDic.Add(name, new PoolData(obj, poolObj));
         }
     }
-
 
     /// <summary>
     /// 清空缓存池的方法 

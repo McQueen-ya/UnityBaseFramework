@@ -20,7 +20,7 @@ public class InputMgr : BaseManager<InputMgr>
     }
 
     /// <summary>
-    /// 是否开启或关闭 我的输入检测
+    /// 是否开启或关闭输入检测
     /// </summary>
     public void StartOrEndCheck(bool isOpen)
     {

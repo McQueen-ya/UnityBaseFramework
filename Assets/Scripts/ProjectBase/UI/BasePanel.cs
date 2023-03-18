@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 /// <summary>
 /// 面板基类 
-/// 帮助我门通过代码快速的找到所有的子控件
-/// 方便我们在子类中处理逻辑 
+/// 通过代码快速的找到所有的子控件
+/// 方便在子类中处理逻辑 
 /// 节约找控件的工作量
 /// </summary>
 public class BasePanel : MonoBehaviour
@@ -15,7 +15,6 @@ public class BasePanel : MonoBehaviour
     //通过里式转换原则 来存储所有的控件
     private Dictionary<string, List<UIBehaviour>> controlDic = new Dictionary<string, List<UIBehaviour>>();
 
-	// Use this for initialization
 	protected virtual void Awake () {
         FindChildrenControl<Button>();
         FindChildrenControl<Image>();
