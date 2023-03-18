@@ -81,7 +81,7 @@ public class AStarMgr : BaseManager<AStarMgr>
             return null;
         }
 
-        //清空上一次相关的数据 避免他们影响 这一次的寻路计算
+        //清空上一次相关的数据 避免影响 这一次的寻路计算
 
         //清空关闭和开启列表
         closeList.Clear();
@@ -114,7 +114,7 @@ public class AStarMgr : BaseManager<AStarMgr>
             //右下 x+1 y+1
             FindNearlyNodeToOpenList(start.x + 1, start.y + 1, 1.4f, start, end);
 
-            //思路判断 开启列表为空 都还没有找到终点 就认为是思路
+            //如果开启列表为空 都还没有找到终点 就认为是死路
             if (openList.Count == 0)
             {
                 Debug.Log("死路");
